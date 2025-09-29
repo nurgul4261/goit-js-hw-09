@@ -7,5 +7,5 @@ import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                
           alt="${a}"
         />
       </a>
-  </li>`).join("");new SimpleLightbox(".gallery a",{captions:!0,captionsData:"alt",captionPosition:"bottom",captionDelay:250});p.addEventListener("click",t=>{if(t.preventDefault(),t.target.nodeName!=="IMG")return;const o=t.target.dataset.source,a=t.target.alt,i=basicLightbox.create(`<img src="${o}" alt="${a}" width="800" height="600">`);function e(n){n.key==="Escape"&&i.close()}i.show(),document.addEventListener("keydown",e),i.element().addEventListener("basiclightbox:close",()=>{document.removeEventListener("keydown",e)})});
+  </li>`).join("");new SimpleLightbox(".gallery a",{captions:!0,captionsData:"alt",captionPosition:"bottom",captionDelay:250});p.addEventListener("click",t=>{if(t.preventDefault(),t.target.nodeName!=="img")return;const o=t.target.dataset.source,a=t.target.alt,i=basicLightbox.create(`<img src="${o}" alt="${a}" width="800" height="600">`);function e(n){n.key==="Escape"&&i.close()}i.show(),document.addEventListener("keydown",e),i.element().addEventListener("basiclightbox:close",()=>{document.removeEventListener("keydown",e)})});
 //# sourceMappingURL=01-gallery.js.map
