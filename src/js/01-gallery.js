@@ -90,7 +90,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
 gallery.addEventListener('click', (e) => {
   e.preventDefault();
 
-  if (e.target.nodeName !== 'IMG') return;
+  if (e.target.nodeName !== 'img') return;
     const imageUrl = e.target.dataset.source;
     const imageAlt = e.target.alt;
     

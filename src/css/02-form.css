@@ -3,7 +3,6 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    text-align: flex-start;
     justify-content: center;
     margin-top:50px;
 }
@@ -16,6 +15,7 @@
     gap: 5px;
     font-size: 16px;
     color: #808080;
+
 }
 
 .feedback-form input, textarea:hover {
@@ -55,6 +55,7 @@
     background-color: #6C8CFF;
     transition: background-color 0.3s ease;
 }
+
 
 .back-link {
   position: relative;
