@@ -87,28 +87,3 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
-gallery.addEventListener('click', (e) => {
-  e.preventDefault();
-
-  if (e.target.nodeName !== 'img') return;
-    const imageUrl = e.target.dataset.source;
-    const imageAlt = e.target.alt;
-    
-    const instance = basicLightbox.create(
-      `<img src="${imageUrl}" alt="${imageAlt}" width="800" height="600">`
-    );
-
-  function onEscPress(e) {
-    if (e.key === 'Escape') {
-      instance.close();
-    }
-  }
-
-  instance.show();
-  document.addEventListener('keydown', onEscPress);
-
-  
-  instance.element().addEventListener('basiclightbox:close', () => {
-    document.removeEventListener('keydown', onEscPress);
-  });
-});
