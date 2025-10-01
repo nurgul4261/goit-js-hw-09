@@ -30,6 +30,7 @@
     border-radius: 4px;
     height: 40px;
     color: #808080;
+    text-align: flex-start;
 }
 
 .feedback-form textarea {
