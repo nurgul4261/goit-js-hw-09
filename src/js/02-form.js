@@ -8,6 +8,10 @@ function onFormSubmit(event) {
   const email = form.elements.email.value.trim();
   const message = form.elements.message.value.trim();
 
+  if (!email || !message) {
+    return;
+  }
+
   const formData = {
     email,
     message,
@@ -18,3 +22,4 @@ function onFormSubmit(event) {
   localStorage.removeItem('feedback-form-state');
   form.reset();
 }
+
