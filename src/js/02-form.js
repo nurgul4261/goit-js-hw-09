@@ -1,4 +1,4 @@
-document.querySelector('.form').addEventListener('submit', onFormSubmit);
+document.querySelector('.feedback-form').addEventListener('submit', onFormSubmit);
 
 
 function onFormSubmit(event) {
