@@ -9,6 +9,7 @@ function onFormSubmit(event) {
   const message = form.elements.message.value.trim();
 
   if (!email || !message) {
+    alert('Lütfen tüm alanları doldurun!');
     return;
   }
 
