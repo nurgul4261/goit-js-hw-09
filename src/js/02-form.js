@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.feedback-form');
   const emailInput = form.elements.email;
